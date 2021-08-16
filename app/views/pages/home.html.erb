@@ -1,0 +1,41 @@
+<main>
+  <div class="home__left-column">
+    <ul>
+      <li id="active">Home</li>
+      <li><small>PUBLIC</small></li>
+      <li class="sidebar__link">Questions</li>
+      <li class="sidebar__link">Tags</li>
+      <li class="sidebar__link">Users</li>
+      <li><small>COLLECTIVES</small></li>
+      <li class="sidebar__link">Explore Collectives</li>
+      <li><small>FIND A JOB</small></li>
+      <li class="sidebar__link">Jobs</li>
+      <li class="sidebar__link">Companies</li>
+    </ul>
+  </div>
+  <div class="home__middle-column">
+    <h1>Top Questions</h1>
+    <ul>
+      <% @questions.each do |question| %>
+      <li>
+      <div class="votes"><%= question[0] %> <span>votes</span></div>
+      <div class="answers"><%= question[1]  %> <span>answers</span></div>
+      <div class="views"><%= question[2]  %> <span>views</span></div>
+      <div class="questions"><%= question[3]  %></div></li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="home__right-column">
+    <div class="card">
+      The Overflow Blog
+      <li>Level Up: Build a Quiz App with SwiftUI – Part 1</li>
+      <li>Using stretch work assignments to help engineers grow</li>
+      Featured on Meta
+      <li>Join me in Welcoming Valued Associates: #945 - Slate - and #948 - Vanny</li>
+      Hot Meta Posts
+      <li>Stop keeping up our [appearance]</li>
+      <li>You should [readme]: this tag is useless</li>
+    </div>
+
+  </div>
+</main>

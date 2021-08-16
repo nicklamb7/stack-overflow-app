@@ -1,0 +1,134 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  border-top: 3px solid #F58023;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  font-weight: 300 !important;
+  font-size: 14px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.05),0 2px 8px rgba(0,0,0,0.05);
+  position: fixed;
+  background-color: #fff;
+  top: 0px;
+  width: 100%;
+  left: 0px;
+}
+
+header svg {
+  padding: 10px;
+}
+
+header input {
+  width: 768px;
+  padding: 0px 16px;
+  height: 33px;
+  border: 1px solid #bbc0c4;
+  border-radius: 3px;
+}
+
+.navbar__logo img {
+  height: 30px;
+  padding-left: 100px;
+}
+
+.navbar__icons {
+  display: flex;
+  padding-right: 100px;
+  opacity: 50%;
+}
+
+body {
+  margin: 50px 100px;
+  main {
+    display: flex;
+  }
+  .home__left-column {
+    width: 170px;
+    height: 100vh;
+    border-right: 1px solid #bbc0c4;
+    padding: 24px 0px;
+    position: fixed;
+    ul {
+      padding: 0px;
+    }
+    li {
+      list-style-type: none;
+      padding: 8px 4px;
+      font-size: 14px;
+      opacity: 50%;
+    }
+    .sidebar__link {
+      margin-left: 16px;
+    }
+    #active {
+      background-color: #eff0f1;
+      border-right: 2px solid #F58023;
+      opacity: 1;
+      font-weight: 400;
+    }
+  }
+  .home__middle-column {
+    margin-left: 170px;
+    width: 750px;
+    height: 100vh;
+    padding: 24px 0px;
+    ul {
+      list-style-type: none;
+      padding: 0px;
+      li {
+        border-top: 1px solid #eff0f1;
+        padding: 16px;
+        display: flex;
+        justify-content: flex-start;
+        span {
+          font-size: 11px;
+          color: #848d95;
+        }
+      }
+      .votes,
+      .answers,
+      .views {
+        height: 38px;
+        width: 38px;
+        padding: 6px;
+      }
+      .questions {
+        width: 548px;
+      }
+    }
+    h1 {
+      font-weight: 400;
+      font-size: 27px;
+      padding: 16px;
+    }
+  }
+  .home__right-column {
+    width: 300px;
+    height: 100vh;
+    padding: 24px;
+    .card {
+      background-color: #fbf2d4;
+      padding: 12px 15px;
+      font-size: 14px;
+      border: 1px solid #f1e5bc;
+      border-radius: 3px;
+      li {
+        font-weight: 300px;
+        padding: 12px;
+        font-weight: 300;
+        list-style-type: none;
+
+      }
+    }
+  }
+
+}
